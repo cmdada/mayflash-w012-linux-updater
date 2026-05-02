@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Mayflash W012 Updater
+Comment=Firmware updater and analysis tool for the Mayflash W012 GameCube Adapter
+Exec=mayflash-w012-updater
+Icon=system-software-update
+Terminal=false
+Categories=Utility;HardwareSettings;
