@@ -70,7 +70,7 @@ yay -S mayflash-w012-linux-updater-git
 
 3. **Install Udev Rules (so you can actually interact with the adapter without root/sudo):**
    ```fish
-   echo 'SUBSYSTEM=="hidraw", ATTRS{idVendor}=="0079", ATTRS{idProduct}=="1843", MODE="0666"' | sudo tee /etc/udev/rules.d/99-mayflash.rules
+   echo 'SUBSYSTEM=="hidraw", ATTRS{idVendor}=="057e", ATTRS{idProduct}=="0337", MODE="0666"' | sudo tee /etc/udev/rules.d/99-mayflash.rules
    sudo udevadm control --reload-rules
    sudo udevadm trigger
    ```

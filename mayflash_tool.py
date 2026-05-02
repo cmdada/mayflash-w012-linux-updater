@@ -4,9 +4,9 @@ import sys
 import time
 import argparse
 
-# Mayflash W012 USB IDs (PC Mode)
-VID = 0x0079  # DragonRise
-PID = 0x1843  # Mayflash PC
+# Mayflash W012 USB IDs (Wii U / NS Mode)
+VID = 0x057E  # Nintendo
+PID = 0x0337  # WUP-028
 
 def find_adapter():
     for device in hid.enumerate():
@@ -117,7 +117,7 @@ if __name__ == "__main__":
         
     dev_info = find_adapter()
     if not dev_info:
-        print("Adapter not found. Please ensure it's plugged in and switched to 'PC' mode.")
+        print("Adapter not found. Please ensure it's plugged in and switched to 'Wii U / NS' mode.")
         sys.exit(1)
         
     print(f"Found Adapter: VID=0x{dev_info['vendor_id']:04X} PID=0x{dev_info['product_id']:04X} "
