@@ -11,6 +11,22 @@ This repository contains a GUI updater and a CLI utility that replicates the USB
 
 ---
 
+## Table of Contents
+- [Features](#features)
+- [Requirements](#requirements)
+  - [Installation (Arch Linux / AUR)](#installation-arch-linux--aur)
+  - [Manual Setup Instructions](#manual-setup-instructions)
+- [Firmware Downloads](#firmware-downloads)
+- [Usage](#usage)
+  - [GUI Version](#gui-version)
+  - [CLI Tool](#cli-tool)
+- [Reverse Engineering Documentation](#reverse-engineering-documentation)
+  - [MCU Details](#mcu-details)
+  - [Dual-Layer Encryption](#dual-layer-encryption)
+  - [USB Protocol](#usb-protocol)
+
+---
+
 ## Features
 
 - **Extract Firmware:** Parses official Mayflash `W012_VXX.exe` files, locates the embedded firmware, and extracts the 9 encrypted blocks.
