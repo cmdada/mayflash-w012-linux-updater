@@ -8,8 +8,8 @@ import time
 import os
 import sys
 
-VID = 0x057E
-PID = 0x0337
+VID = 0x0079
+PID = 0x1843
 
 class FirmwareFile:
     def __init__(self, path):
@@ -126,7 +126,7 @@ class MayflashUpdaterApp(tk.Tk):
                 
         if not found:
             self.dev_path = None
-            self.lbl_status.config(text="Not Found. Ensure it is plugged in and in Wii U mode.", foreground="red")
+            self.lbl_status.config(text="Not Found. Ensure it is plugged in and in PC mode.", foreground="red")
             self.log("Adapter not found.")
             
         self._update_ui_state()
