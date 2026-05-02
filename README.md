@@ -25,7 +25,16 @@ This repository contains a GUI updater and a CLI utility that replicates the USB
 - `python3-tk` (for the GUI)
 - `hid` and `pyusb` packages
 
-### Setup Instructions
+### Installation (Arch Linux / AUR)
+
+The easiest way to install on Arch Linux is via the AUR. This automatically installs the dependencies, scripts, `.desktop` launcher, and sets up the required `udev` rules.
+
+```bash
+yay -S mayflash-w012-linux-updater-git
+```
+*(Once installed, you can launch it from your application menu or by typing `mayflash-w012-updater` in the terminal).*
+
+### Manual Setup Instructions
 
 1. **Install Dependencies:**
    ```fish
